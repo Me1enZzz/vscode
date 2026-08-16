@@ -1,0 +1,7 @@
+<view class="container home">
+  <view class="hero"><view class="logo">›_</view><view><view class="app-title">CLI命令速查</view><view class="app-sub">快速查找 Git / Linux / npm 命令示例</view></view><view class="capsule"><text>•••</text><text>⊙</text></view></view>
+  <view class="search" bindtap="goSearch">🔍 搜索命令，例如：git commit 或 撤销提交</view>
+  <view class="tiles"><view class="tile red">◇<text>Git\n常用命令</text></view><view class="tile green">🐧<text>Linux\n基础命令</text></view><view class="tile blue">▦<text>npm\n包管理器</text></view></view>
+  <view class="section-head"><text>🔥 热门命令</text><text class="more">查看更多 ›</text></view><view class="card"><view wx:for="{{hot}}" wx:key="name" class="row" bindtap="goDetail" data-name="{{item.name}}"><view class="icon {{item.icon}}">{{item.icon==='npm'?'npm':'◇'}}</view><view><view class="title">{{item.name}}</view><view class="sub">{{item.desc}}</view></view><view class="tag">{{item.type}}</view></view></view>
+  <view class="section-head"><text>🕘 最近浏览</text><text class="more">查看更多 ›</text></view><view class="card"><view wx:for="{{recent}}" wx:key="name" class="row" bindtap="goDetail" data-name="{{item.name}}"><view class="icon {{item.icon}}">◇</view><view><view class="title">{{item.name}}</view><view class="sub">{{item.desc}}</view></view><view class="more">2分钟前</view></view></view>
+</view>

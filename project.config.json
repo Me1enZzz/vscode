@@ -1,0 +1,15 @@
+{
+  "description": "CLI 命令速查微信小程序",
+  "packOptions": { "ignore": [] },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "appid": "touristappid",
+  "projectname": "cli-command-quick-reference",
+  "condition": {}
+}
